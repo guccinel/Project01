@@ -4,15 +4,18 @@ public class ProjectTask11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String []  state= new String [] {"virginia", "texas", "california", "texas", "virginia"};
-        System.out.println("Duplicate elements in given array of strings ");
-         
-        for(int i = 0; i < state.length; i++) {
-            for(int j = i + 1; j < state.length; j++) {
-                if(state[i] == state[j])
-                    System.out.println(state[j]);
-            }
-
-        }
+		String[] array= {"Dog","Cat","Snake","Bird","Cat"};
+		int i=0;
+		int j=0;
+		
+		for(i=0; i<array.length; i++) {
+			for(j=i+1; j<array.length; j++) {
+				if(array[i].equals(array[j])) {
+					System.out.println(array[i]);
+					break;
+				}
+			}
+		}
+		
+		
 	}
-}
